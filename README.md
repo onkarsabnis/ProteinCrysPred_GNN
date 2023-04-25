@@ -1,10 +1,10 @@
 # Protein Crystallization Propensity Prediction Using Graph Neural Network Models
 
 ## Dataset
-The dataset we use comes from DCFCrystal's BD_CRYS and the raw dataset can be obtained from this [link](http://202.119.84.36:3079/dcfcrystal/Data.html).
+The dataset can be obtained from this [link](http://202.119.84.36:3079/dcfcrystal/Data.html).
 
 ## Requirement
-**Install  BLAST**
+<!-- **Install  BLAST**
 
 We use PSI-BLAST to generate  position-specific scoring matrix (PSSM) by searching the SWISS-Prot database.
 ```
@@ -22,20 +22,22 @@ wget -c https://download.igb.uci.edu/SCRATCH-1D_1.2.tar.gz
 tar -zvxf SCRATCH-1D_1.2.tar.gz
 cd SCRATCH-1D_1.2
 ./install
-```
+``` -->
 
 **Install PconsC4 and HHsuite**
 
-We use PconsC4 software to predict protein contact map. Specifically, for a query sequence , we use HHblits software to search the [UniClust30](https://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/) database to generate the corresponding multiple sequence alignment (MSA), which is further fed to PconsC4 for contact map prediction. For the installation process of [PconsC4](https://github.com/ElofssonLab/PconsC4) and [HHsuite](https://github.com/soedinglab/hh-suite), please refer to their respective official websites.
+We use PconsC4 software to predict protein contact map. 
+<!-- Specifically, for a query sequence , we use HHblits software to search the [UniClust30](https://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/) database to generate the corresponding multiple sequence alignment (MSA), which is further fed to PconsC4 for contact map prediction.  -->
+For the installation process of [PconsC4](https://github.com/ElofssonLab/PconsC4), please refer to their respective official websites.
 
-**Install IPC2**
+<!-- **Install IPC2**
 
 We use IPC2.0 to calculate the protein isoelectric point (pI).
 ```
 cd pkgs
 wget -c http://ipc2.mimuw.edu.pl/ipc-2.0.1.zip
 unzip ipc-2.0.1.zip
-```
+``` -->
 
 **python environment**
 - python 3.7
@@ -62,7 +64,7 @@ XXXXXXXXXXXXXX
 ...
 ```
 
-The model input also requires multiple sequence feature information, and the [generate_featrues.py](generate_features.py) script can be used to obtain the corresponding feature files.
+<!-- The model input also requires multiple sequence feature information, and the [generate_featrues.py](generate_features.py) script can be used to obtain the corresponding feature files. -->
 
 **run inference**
 
