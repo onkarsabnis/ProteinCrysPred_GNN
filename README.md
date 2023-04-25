@@ -24,7 +24,7 @@ cd SCRATCH-1D_1.2
 ./install
 ``` -->
 
-**Install PconsC4 and HHsuite**
+**Install PconsC4**
 
 We use PconsC4 software to predict protein contact map. 
 <!-- Specifically, for a query sequence , we use HHblits software to search the [UniClust30](https://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/) database to generate the corresponding multiple sequence alignment (MSA), which is further fed to PconsC4 for contact map prediction.  -->
