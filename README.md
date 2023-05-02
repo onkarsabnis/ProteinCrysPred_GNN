@@ -68,10 +68,9 @@ XXXXXXXXXXXXXX
 
 **run inference**
 
-First you need to set the input file and feature dir in the [config/test.yaml](./config/test.yaml) configuration file. The program will go to the feature directory to find the sequence-based feature file based on the corresponding protein ID.
+First you need to set the input file in the [config/test.yaml](./config/test.yaml) configuration file.
 
 - input_file: "input.fasta"
-- feature_dir: "feature"
 
 You can also change other parameters in the configuration file according to your needs, such as *output*, *batch_size*, *device*, and *load_pth*. Then you need to inference through the following script. The output results are saved to the *out.csv* file by default
 
